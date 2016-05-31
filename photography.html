@@ -57,42 +57,17 @@
 				</div>
 
 			<!-- Main -->
-				<div class="wrapper style1">
-
-					<div class="container">
-						<h2 class="w3-center">Manual Slideshow</h2>
-
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<img class="mySlides" src="t.JPG" style="width:100%">
-<img class="mySlides" src="y.JPG" style="width:100%">
-<img class="mySlides" src="u.JPG" style="width:100%">
-<img class="mySlides" src="img_forest.jpg" style="width:100%">
-
-<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
+				<div id="slideshow">
+   <div>
+     <img src="t.jpg">
+   </div>
+   <div>
+     <img src="u.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 						<hr />
 						<div class="row">
 							<article class="4u 12u(mobile) special">
